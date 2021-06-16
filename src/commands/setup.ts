@@ -27,7 +27,7 @@ export default class Setup extends Command {
         }
 
         const contents = {
-            product: productName,
+            product: productName ? productName: 'none',
             url: webhook
         }
 
