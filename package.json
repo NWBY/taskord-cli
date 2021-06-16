@@ -1,7 +1,7 @@
 {
     "name": "taskord-cli",
     "description": "Create tasks from your terminal",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "author": "NWBY @NWBY",
     "bin": {
         "taskord": "./bin/run"
