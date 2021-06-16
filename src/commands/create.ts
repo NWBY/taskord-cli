@@ -25,13 +25,13 @@ export default class Create extends Command {
         this.log(`${flags.done}`)
         
         if (flags.product) {
-            let details = taskordConfigRead.webhooks.find(e => {
-                return e.product.toLowerCase() == flags.product.toLowerCase();
+            let details = taskordConfigRead.webhooks.find((e: any) => {
+                return e.product.toLowerCase() == flags.product?.toLowerCase();
             });
 
             this.createTask(details, args.task, flags.done);
         } else {
-            let details = taskordConfigRead.webhooks.find(e => e.product == 'none');
+            let details = taskordConfigRead.webhooks.find((e: any) => e.product == 'none');
 
             this.createTask(details, args.task, flags.done);
         }
