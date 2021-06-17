@@ -15,13 +15,13 @@ Create tasks from your terminal
 1. Install with NPM
 
 ```sh-session
-$ npm install -g taskord-cli
+npm install -g taskord-cli
 ```
 
 2. Then run the setup command:
 
 ```sh-session
-$ taskord setup
+taskord setup
 ```
 
 You will need to enter your Webhook URL which you can create on the 'Integrations' page in your Taskord account. Make sure to create a **Simple Webhook** and select whether you want it to be for a product or just a general webhook.
@@ -31,19 +31,19 @@ Once you've entered your webhook URL, you will be asked `Is this a product webho
 3. Create a new task:
 
 ```sh-session
-$ taskord create "Enter your task here"
+taskord create "Enter your task here"
 ```
 
 If the task is done you can pass the `--done` or `-d` flag like so:
 
 ```sh-session
-$ taskord create "Enter your task here" --done
+taskord create "Enter your task here" --done
 ```
 
 If the task is for a product you will need to tell the CLI which product it is for by passing the `--product` or `-p` flag like so:
 
 ```sh-session
-$ taskord create "Enter your task here" --product="Sotent"
+taskord create "Enter your task here" --product="Sotent"
 ```
 
 <!-- usagestop -->
